@@ -20,7 +20,7 @@ extern "C" {
 
     pub fn nftnl_batch_iovec_len(batch: *mut nftnl_batch) -> c_int;
 
-    pub fn nftnl_batch_iovec(batch: *mut nftnl_batch, iov: *mut [u8; 0usize], iovlen: u32);
+    pub fn nftnl_batch_iovec(batch: *mut nftnl_batch, iov: *mut iovec, iovlen: u32);
 }
 pub const NFTNL_PARSE_EBADINPUT: u32 = 0;
 pub const NFTNL_PARSE_EMISSINGNODE: u32 = 1;
